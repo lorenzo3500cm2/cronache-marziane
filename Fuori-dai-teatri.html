@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuori dai teatri — Cronache Marziane</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Libre Baskerville", Georgia, serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 28px 36px;
+      background-color: #ffffff;
+    }
+
+    .site-title {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 70px 36px 70px 36px;
+      max-width: 1200px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 50px;
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .project-page {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 70px;
+      align-items: start;
+    }
+
+    h1 {
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin: 0 0 16px 0;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      margin: 0 0 48px 0;
+    }
+
+    .credits {
+      font-size: 17px;
+      margin-bottom: 48px;
+    }
+
+    .credits p {
+      margin: 0 0 18px 0;
+    }
+
+    .intro {
+      font-size: 21px;
+      line-height: 1.45;
+      max-width: 740px;
+      margin-bottom: 58px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0 0 24px 0;
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 760px;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      padding: 24px 36px;
+      font-size: 13px;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        display: block;
+        padding: 22px;
+      }
+
+      .site-title {
+        font-size: 24px;
+      }
+
+      nav {
+        margin-top: 18px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 14px;
+      }
+
+      main {
+        padding: 46px 22px 50px 22px;
+      }
+
+      .project-page {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        margin-bottom: 36px;
+      }
+
+      .intro {
+        font-size: 19px;
+      }
+
+      .text {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="site-title">Cronache Marziane</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="attivita.html">Attività</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="progetti.html">← Progetti</a>
+
+    <section class="project-page">
+      <div>
+        <h1>Fuori dai teatri</h1>
+        <p class="subtitle">un film di Rä di Martino</p>
+
+        <div class="credits">
+          <p>
+            <strong>Produzione</strong><br>
+            Fondazione Teatro della Toscana – Centro per la Sperimentazione e la Ricerca Teatrale
+          </p>
+        </div>
+
+        <p class="intro">
+          Una visione d’artista dei primi anni del Centro per la Ricerca e la Sperimentazione Teatrale,
+          a partire dalle immagini dell’archivio di Pontedera.
+        </p>
+
+        <h2>Sinossi</h2>
+
+        <div class="text">
+          <p>
+            <em>Fuori dai teatri</em> è un film d’artista prodotto dal Centro per la Ricerca e la
+            Sperimentazione Teatrale del Teatro della Toscana e affidato all’artista Rä di Martino.
+            Il film restituisce la storia dei primi anni dell’esperienza teatrale del Piccolo Teatro
+            di Pontedera e del CSRT, a partire dalle immagini dell’archivio del CSRT Pontedera e
+            dalle interviste ai protagonisti di quella storia.
+          </p>
+
+          <p>
+            Anna Bellato e Lino Musella riportano verbatim le voci delle persone intervistate,
+            trasponendo il racconto in uno spazio più universale.
+          </p>
+
+          <p>
+            Il film propone una riflessione critica sulle opere e sulle attività che hanno
+            caratterizzato il Centro di Pontedera.
+          </p>
+        </div>
+      </div>
+
+      <img class="project-image" src="img/fuori-dai-teatri.jpg" alt="Fuori dai teatri">
+    </section>
+  </main>
+
+  <footer>
+    © Cronache Marziane — Associazione culturale
+  </footer>
+
+</body>
+</html>
