@@ -1,1 +1,290 @@
 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonbird — Cronache Marziane</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Libre Baskerville", Georgia, serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 28px 36px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #000000;
+    }
+
+    .site-title {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 70px 36px 80px 36px;
+      max-width: 1200px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 50px;
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin: 0 0 20px 0;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+
+    .meta {
+      font-size: 19px;
+      line-height: 1.45;
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      display: block;
+      margin: 0 0 70px 0;
+      background-color: #f2f2f2;
+    }
+
+    section {
+      max-width: 850px;
+      margin-bottom: 78px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0 0 28px 0;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.65;
+      margin: 0 0 22px 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 1000px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      padding: 24px 36px;
+      font-size: 13px;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        display: block;
+        padding: 22px;
+      }
+
+      .site-title {
+        font-size: 24px;
+      }
+
+      nav {
+        margin-top: 18px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 14px;
+      }
+
+      main {
+        padding: 46px 22px 60px 22px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .meta {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="site-title">Cronache Marziane</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="musica.html">Musica</a>
+      <a href="news.html">News</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="progetti.html">← Progetti</a>
+
+    <h1>Moonbird</h1>
+
+    <div class="meta">
+      Film di 26 minuti / 35 minuti con musica dal vivo, 2022
+    </div>
+
+    <img class="hero-image" src="img/moonbird-1.jpg" alt="Moonbird">
+
+    <section>
+      <h2>Descrizione</h2>
+
+      <p>
+        <em>Moonbird</em> è un’opera ibrida che fonde cinema, videoarte e opera lirica.
+        Il libretto è composto dal cantautore Mauro Remiddi.
+      </p>
+
+      <p>
+        L’opera viene presentata e sviluppata in diversi contesti: come performance dal vivo
+        con musica dal vivo e proiezioni video; come video a canale singolo.
+      </p>
+
+      <p>
+        Le immagini conducono il pubblico nella storia di Moonbird, una creatura onirica che
+        appare e infonde vita in una villa in cui un uomo ha scelto di isolarsi dal mondo:
+        un botanico che vive immerso nei suoi oggetti, nella vasta casa che lo intrappola
+        e lo immobilizza.
+      </p>
+
+      <p>
+        Un evento banale fa crollare questo equilibrio e conduce il protagonista fuori dalla
+        sua oscurità fatta di convenzioni e monotonia. Qui, in uno stato di sospensione onirica,
+        nasce Moonbird.
+      </p>
+
+      <p>
+        Ciò che si è dimostrato incapace di penetrare la realtà lo fa attraverso il subconscio.
+        L’uccello simboleggia il messaggio, qualunque esso sia, personale, unico e ineffabile,
+        che non può penetrare il mondo dell’uomo.
+      </p>
+
+      <p>
+        I ruoli principali sono interpretati dall’attrice e performer Silvia Calderoni nel ruolo
+        di Moonbird e dall’artista Manfredi Beninati nel ruolo di Amedeo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Moonbird Variations</h2>
+
+      <p>
+        In <em>Moonbird Variations</em> le immagini del film sono inserite in una performance
+        audiovisiva dal vivo che unisce cinema, videoarte e opera. È lì che si costruisce
+        la storia di Moonbird.
+      </p>
+
+      <p>
+        Al centro del percorso sonoro, l’incontro con i personaggi avviene grazie a proiezioni
+        video. La musica, che si trasforma da una forma neoclassica in una nuvola elettronica
+        — in cui coesistono drum machine, voci manipolate e strumenti acustici — interagisce
+        con le proiezioni.
+      </p>
+    </section>
+
+    <section>
+      <h2>Produzione</h2>
+
+      <p>
+        <em>Moonbird</em> è stato sostenuto e prodotto da MAMbo, Bologna; Fondazione Merz,
+        Palermo/Torino; Triennale Milano; Snaporazverein, CH; e durante l’edizione 2021
+        di <em>Prender-si cura</em>, un progetto di residenze di ricerca e produzione artistica
+        che si è svolto negli spazi di La Pelanda.
+      </p>
+    </section>
+
+    <section>
+      <h2>Immagini</h2>
+
+      <div class="gallery">
+        <img src="img/moonbird-1.jpg" alt="Moonbird">
+        <img src="img/moonbird-2.jpg" alt="Moonbird">
+        <img src="img/moonbird-3.jpg" alt="Moonbird">
+        <img src="img/moonbird-4.jpg" alt="Moonbird">
+        <img src="img/moonbird-5.jpg" alt="Moonbird">
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © Cronache Marziane — Associazione culturale
+  </footer>
+
+</body>
+</html>
