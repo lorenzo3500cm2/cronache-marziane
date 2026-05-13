@@ -49,21 +49,28 @@
       max-width: 1200px;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 360px;
-      gap: 70px;
-      align-items: start;
-      margin-bottom: 90px;
-    }
+ .hero {
+  max-width: 900px;
+  margin-bottom: 90px;
+}
 
-    h1 {
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 1.1;
-      margin: 0 0 24px 0;
-      letter-spacing: -1px;
-    }
+.hero a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
+
+ .hero-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  margin: 0 0 44px 0;
+  background-color: #f2f2f2;
+}
 
     .subtitle {
       font-size: 22px;
@@ -180,14 +187,17 @@
       }
 
       .hero {
-        grid-template-columns: 1fr;
-        gap: 36px;
-        margin-bottom: 70px;
-      }
+  margin-bottom: 70px;
+}
 
-      h1 {
-        font-size: 36px;
-      }
+h1 {
+  font-size: 34px;
+  white-space: normal;
+}
+
+.hero-image {
+  max-width: 100%;
+}
 
       .subtitle {
         font-size: 20px;
@@ -223,30 +233,29 @@
   <main>
 
     <section class="hero">
-      <div>
-        <h1>Giacomo “Mino” Di Martino</h1>
+  <h1>Giacomo “Mino” Di Martino</h1>
 
-        <div class="subtitle">
-          Musicista, compositore, autore e chitarrista italiano. Per collaborazioni e informazioni sul suo lavoro contattateci su cronachemarzianeprojects@gmail.com
-        </div>
+  <img class="hero-image" src="img/mino-di-martino.jpg" alt="Giacomo Mino Di Martino">
 
-        <div class="hero-text">
-          <p>
-            La carriera di Giacomo “Mino” Di Martino attraversa oltre sei decenni di storia musicale italiana,
-            ponendosi come ponte tra la stagione del beat, la sperimentazione progressive ed elettronica
-            e la successiva evoluzione della musica d’autore contemporanea.
-          </p>
+  <div class="subtitle">
+    Musicista, compositore, autore e chitarrista italiano. Per collaborazioni e informazioni sul suo lavoro:
+    <a href="mailto:cronachemarzianeprojects@gmail.com">cronachemarzianeprojects@gmail.com</a>
+  </div>
 
-          <p>
-            La sua attività artistica si distingue per continuità, versatilità e rilevanza culturale,
-            avendo contribuito tanto alla dimensione popolare della canzone italiana quanto ai linguaggi
-            di ricerca e di avanguardia.
-          </p>
-        </div>
-      </div>
+  <div class="hero-text">
+    <p>
+      La carriera di Giacomo “Mino” Di Martino attraversa oltre sei decenni di storia musicale italiana,
+      ponendosi come ponte tra la stagione del beat, la sperimentazione progressive ed elettronica
+      e la successiva evoluzione della musica d’autore contemporanea.
+    </p>
 
-      <img class="hero-image" src="img/mino-di-martino.jpg" alt="Giacomo Mino Di Martino">
-    </section>
+    <p>
+      La sua attività artistica si distingue per continuità, versatilità e rilevanza culturale,
+      avendo contribuito tanto alla dimensione popolare della canzone italiana quanto ai linguaggi
+      di ricerca e di avanguardia.
+    </p>
+  </div>
+</section>
 
     <section>
       <h2>I Giganti</h2>
