@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cronache Marziane</title>
 
-  <!-- Font Libre Baskerville -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -26,6 +25,7 @@
       align-items: baseline;
       padding: 28px 36px;
       border-bottom: 1px solid #000000;
+      background-color: rgba(255, 255, 255, 0.85);
     }
 
     .site-title {
@@ -46,21 +46,28 @@
     }
 
     main {
+      min-height: 75vh;
       padding: 70px 36px 40px 36px;
-      max-width: 1100px;
+      background-image: url("img/logo-cronache-marziane.jpeg");
+      background-repeat: no-repeat;
+      background-position: center 80px;
+      background-size: min(85vw, 950px);
+    }
+
+    .content {
+      max-width: 760px;
+      padding-top: 420px;
     }
 
     .intro {
-      font-size: 42px;
-      line-height: 1.15;
-      max-width: 920px;
-      margin-bottom: 70px;
-      letter-spacing: -1px;
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 50px;
+      letter-spacing: -0.8px;
     }
 
     .text-block {
-      max-width: 720px;
-      font-size: 20px;
+      font-size: 19px;
       line-height: 1.55;
     }
 
@@ -68,7 +75,7 @@
       padding: 24px 36px;
       border-top: 1px solid #000000;
       font-size: 13px;
-      margin-top: 90px;
+      background-color: #ffffff;
     }
 
     @media (max-width: 700px) {
@@ -92,17 +99,21 @@
       }
 
       main {
-        padding: 46px 22px 30px 22px;
+        padding: 40px 22px 30px 22px;
+        background-position: center 40px;
+        background-size: 95vw;
+      }
+
+      .content {
+        padding-top: 300px;
       }
 
       .intro {
-        font-size: 30px;
-        line-height: 1.2;
-        margin-bottom: 50px;
+        font-size: 26px;
       }
 
       .text-block {
-        font-size: 18px;
+        font-size: 17px;
       }
 
       footer {
@@ -127,25 +138,27 @@
   </header>
 
   <main>
-    <section class="intro">
-      Cronache Marziane è un’associazione culturale dedicata alla ricerca,
-      alla produzione e alla diffusione dell’arte contemporanea.
-    </section>
+    <div class="content">
+      <section class="intro">
+        Cronache Marziane è un’associazione culturale dedicata alla ricerca,
+        alla produzione e alla diffusione dell’arte contemporanea.
+      </section>
 
-    <section class="text-block">
-      <p>
-        L’associazione nasce come piattaforma per osservare il presente da una
-        distanza critica, immaginando nuove forme di racconto, esposizione e
-        condivisione culturale.
-      </p>
+      <section class="text-block">
+        <p>
+          L’associazione nasce come piattaforma per osservare il presente da una
+          distanza critica, immaginando nuove forme di racconto, esposizione e
+          condivisione culturale.
+        </p>
 
-      <p>
-        Attraverso mostre, pubblicazioni, incontri, programmi di ricerca e
-        collaborazioni con artisti, curatori, istituzioni e territori,
-        Cronache Marziane promuove pratiche artistiche capaci di generare
-        relazioni, conoscenza e partecipazione pubblica.
-      </p>
-    </section>
+        <p>
+          Attraverso mostre, pubblicazioni, incontri, programmi di ricerca e
+          collaborazioni con artisti, curatori, istituzioni e territori,
+          Cronache Marziane promuove pratiche artistiche capaci di generare
+          relazioni, conoscenza e partecipazione pubblica.
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer>
