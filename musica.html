@@ -157,14 +157,16 @@
       max-width: 760px;
     }
 .video-section {
-  max-width: 1200px;
+  max-width: none;
+  width: calc(100vw - 72px);
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 36px;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1500px;
   margin-top: 36px;
 }
 
@@ -264,8 +266,6 @@ h1 {
   <a href="index.html">Home</a>
 
   <a href="progetti.html">Progetti</a>
-
-  <a href="musica.html">Musica</a>
 
   <a href="news.html">News</a>
      <a href="chi-siamo.html">Chi siamo</a>
