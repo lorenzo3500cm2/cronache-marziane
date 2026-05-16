@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music — Cronache Marziane</title>
+  <title>Giacomo “Mino” Di Martino — Cronache Marziane</title>
 
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,73 +49,160 @@
     }
 
     main {
-      padding: 70px 36px 70px 36px;
-      max-width: 1100px;
+      padding: 70px 36px 80px 36px;
+      max-width: 1200px;
     }
 
-    h1 {
-      font-size: 46px;
-      font-weight: 400;
-      line-height: 1.1;
-      margin: 0 0 60px 0;
-      letter-spacing: -1px;
-    }
+ .hero {
+  max-width: 900px;
+  margin-bottom: 90px;
+}
 
-    .intro {
-      max-width: 760px;
+.hero a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
+
+ .hero-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  margin: 0 0 44px 0;
+  background-color: #f2f2f2;
+}
+
+    .subtitle {
       font-size: 22px;
-      line-height: 1.5;
-      margin-bottom: 70px;
+      line-height: 1.45;
+      max-width: 780px;
+      margin-bottom: 44px;
     }
 
-    .music-item {
-      margin-bottom: 52px;
+    .hero-text {
+      font-size: 18px;
+      line-height: 1.65;
+      max-width: 780px;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      background-color: #f2f2f2;
+    }
+
+    section {
+      margin-bottom: 76px;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0 0 24px 0;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 34px 0 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.65;
+      margin: 0 0 20px 0;
+    }
+
+    .timeline {
+      margin-top: 36px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 30px;
+      margin-bottom: 24px;
+    }
+
+    .year {
+      font-size: 16px;
+    }
+
+    .links {
+      margin-top: 28px;
+    }
+
+    .links a {
+      display: block;
+      color: #000000;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 10px;
+      overflow-wrap: break-word;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 15px;
+      line-height: 1.55;
+      margin-top: 50px;
       max-width: 760px;
     }
+.video-section {
+  max-width: none;
+  width: calc(100vw - 72px);
+}
 
-    .music-item h2 {
-      font-size: 28px;
-      font-weight: 400;
-      margin: 0 0 10px 0;
-      line-height: 1.2;
-    }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 36px;
+}
 
-    .music-item p {
-      font-size: 17px;
-      margin: 0;
-      line-height: 1.6;
-    }
+.video-item h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
 
-    .music-item a {
-      color: #000000;
-      text-decoration: none;
-    }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  background-color: #f2f2f2;
+}
 
-    .music-item a:hover {
-      text-decoration: underline;
-    }
-
-    .language-link {
-      margin-top: 70px;
-      font-size: 14px;
-    }
-
-    .language-link a {
-      color: #000000;
-      text-decoration: none;
-    }
-
-    .language-link a:hover {
-      text-decoration: underline;
-    }
-
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
     footer {
       padding: 24px 36px;
       font-size: 13px;
       background-color: #ffffff;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
       header {
         display: block;
         padding: 22px;
@@ -124,6 +211,10 @@
       .site-title {
         font-size: 24px;
       }
+      .video-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
 
       nav {
         margin-top: 18px;
@@ -136,26 +227,36 @@
       }
 
       main {
-        padding: 46px 22px 50px 22px;
+        padding: 46px 22px 60px 22px;
       }
 
-      h1 {
-        font-size: 34px;
-        margin-bottom: 44px;
+      .hero {
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-size: 34px;
+  white-space: normal;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+      .subtitle {
+        font-size: 20px;
       }
 
-      .intro {
-        font-size: 19px;
+      p {
+        font-size: 17px;
       }
 
-      .music-item h2 {
-        font-size: 24px;
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
       }
-
-      .music-item p {
-        font-size: 16px;
-      }
-    }
+       }
+     
   </style>
 </head>
 
@@ -164,60 +265,314 @@
   <header>
     <div class="site-title">Cronache Marziane</div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="music.html">Music</a>
-      <a href="news.html">News</a>
-      <a href="about.html">About</a>
-      <a href="contacts.html">Contacts</a>
-    </nav>
+  <nav>
+
+  <a href="index.html">Home</a>
+
+  <a href="progetti.html">Progetti</a>
+
+  <a href="news.html">News</a>
+     <a href="chi-siamo.html">Chi siamo</a>
+
+  <a href="contatti.html">Contatti</a>
+
+    <a href="en/music.html">EN</a>
+
+</nav>
   </header>
 
   <main>
-    <h1>Music</h1>
 
-    <section class="intro">
-      Cronache Marziane develops activities related to music, sound and experimentation,
-      through programmes, productions, listening sessions, meetings and collaborations with
-      artists, musicians and cultural spaces.
+    <section class="hero">
+  <h1>Giacomo “Mino” Di Martino</h1>
+
+  <img class="hero-image" src="img/mino-di-martino.jpg" alt="Giacomo Mino Di Martino">
+
+  <div class="subtitle">
+    Musicista, compositore, autore e chitarrista italiano. Per collaborazioni e informazioni sul suo lavoro:
+    <a href="mailto:cronachemarzianeprojects@gmail.com">cronachemarzianeprojects@gmail.com</a>
+  </div>
+
+  <div class="hero-text">
+    <p>
+      La carriera di Giacomo “Mino” Di Martino attraversa oltre sei decenni di storia musicale italiana,
+      ponendosi come ponte tra la stagione del beat, la sperimentazione progressive ed elettronica
+      e la successiva evoluzione della musica d’autore contemporanea.
+    </p>
+
+    <p>
+      La sua attività artistica si distingue per continuità, versatilità e rilevanza culturale,
+      avendo contribuito tanto alla dimensione popolare della canzone italiana quanto ai linguaggi
+      di ricerca e di avanguardia.
+    </p>
+  </div>
+</section>
+
+    <section>
+      <h2>I Giganti</h2>
+
+      <p>
+        Nel 1964, a Milano, Mino Di Martino partecipa alla fondazione del gruppo I Giganti,
+        una delle formazioni più rappresentative del beat italiano. In qualità di chitarrista
+        e membro fondatore contribuisce alla definizione del suono e dell’identità artistica
+        del complesso, in un periodo di profonda trasformazione della musica leggera nazionale.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year">1966</div>
+          <div>
+            <strong>“Tema”</strong><br>
+            Disco per l’estate.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">1967</div>
+          <div>
+            <strong>“Proposta”</strong><br>
+            Festival di Sanremo.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">1968</div>
+          <div>
+            <strong>“Da bambino”</strong><br>
+            Festival di Sanremo.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">1971</div>
+          <div>
+            <strong>“Terra in bocca”</strong><br>
+            Album centrale nella storia del gruppo, considerato uno dei primi lavori italiani di denuncia contro la mafia.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="music-item">
-      <h2>
-        <a href="mino-di-martino.html">Giacomo “Mino” Di Martino</a>
-      </h2>
+    <section>
+      <h2>Terra in bocca</h2>
+
       <p>
-        A biographical and musical dossier on Mino Di Martino, from I Giganti to experimental
-        research, from Telaio Magnetico to Albergo Intergalattico Spaziale, and his collaborations
-        with Franco Battiato, Alice and other figures of Italian music.
+        Pubblicato nel 1971, <em>Terra in bocca</em> rappresenta uno dei momenti più radicali
+        del percorso de I Giganti. L’album supera i confini della canzone beat e della musica leggera,
+        assumendo una forma più narrativa, civile e sperimentale.
+      </p>
+
+      <p>
+        Il lavoro sarà successivamente oggetto di riscoperta critica, anche attraverso il volume
+        <em>Terra in bocca. Quando I Giganti sfidarono la mafia</em> di Brunetto Salvarani
+        e Odoardo Semellini, pubblicato nel 2009.
+      </p>
+
+      <p>
+        Nel 2011 <em>Terra in bocca</em> riceve anche un riconoscimento nell’ambito del Premio Borsellino,
+        confermando il valore civile e culturale dell’opera.
       </p>
     </section>
 
-    <section class="music-item">
-      <h2>Sound archive</h2>
+    <section>
+      <h2>Telaio Magnetico</h2>
+
       <p>
-        Materials, recordings, documents and research paths connected to music, sound culture,
-        performance and experimental practices.
+        Nel 1975 Mino Di Martino partecipa all’esperienza del Telaio Magnetico, progetto sperimentale
+        che riunisce figure centrali della ricerca sonora italiana, tra cui Franco Battiato,
+        Lino Capra Vaccina, Juri Camisasca, Roberto Mazza, Terra Di Benedetto e altri musicisti.
+      </p>
+
+      <p>
+        Il Telaio Magnetico rappresenta un laboratorio di improvvisazione e ricerca, in cui musica,
+        gesto, suono elettronico, vocalità e dimensione performativa convergono in una pratica
+        libera e radicale.
+      </p>
+
+      <p>
+        La ristampa <em>Live ’75 / Expanded Version</em>, pubblicata da Black Sweat Records,
+        ha contribuito alla riscoperta critica di questa esperienza, oggi considerata uno dei momenti
+        più significativi della sperimentazione musicale italiana degli anni Settanta.
       </p>
     </section>
 
-    <section class="music-item">
-      <h2>Programmes and productions</h2>
+    <section>
+  <h2>Albergo Intergalattico Spaziale</h2>
+
+  <p>
+    Con Terra Di Benedetto, Mino Di Martino dà vita all’esperienza dell’Albergo Intergalattico Spaziale,
+    luogo e progetto musicale legato alla scena underground romana e alle ricerche cosmiche,
+    elettroniche e sperimentali degli anni Settanta.
+  </p>
+
+  <p>
+    L’esperienza dell’Albergo Intergalattico Spaziale si colloca in una zona di intersezione tra musica,
+    arte visiva, performance, spiritualità, cultura alternativa e ricerca sonora.
+  </p>
+
+  <p>
+    <a href="https://www.albergointergalatticospaziale.com/" target="_blank" rel="noopener">
+      www.albergointergalatticospaziale.com
+    </a>
+  </p>
+</section>
+
+    <section>
+      <h2>Collaborazioni con Franco Battiato e Alice</h2>
+
       <p>
-        Concerts, listening formats, audiovisual projects and interdisciplinary productions
-        that explore the relationship between music, image, text, memory and contemporary artistic research.
+        Mino Di Martino ha collaborato con Franco Battiato, Alice, Giuni Russo e altri protagonisti
+        della musica italiana, partecipando a una stagione in cui la forma canzone si apre a una
+        maggiore complessità testuale, sonora e culturale.
+      </p>
+
+      <p>
+        Tra i materiali presenti nel dossier compare anche lo speciale televisivo
+        <em>L’Orecchiocchio</em>, legato all’universo di Battiato e alla collaborazione con Mino Di Martino.
       </p>
     </section>
 
-    <div class="language-link">
-      <a href="../musica.html">Italiano</a>
+    <section>
+      <h2>Alla periferia dell’impero</h2>
+
+      <p>
+        Nel 1983 Mino Di Martino pubblica <em>Alla periferia dell’impero</em>, album solista realizzato
+        nell’ambiente musicale vicino a Franco Battiato e alla sua squadra di collaboratori.
+      </p>
+
+      <p>
+        Il disco unisce forma canzone, arrangiamenti elettronici, attenzione critica alla società italiana
+        e una scrittura fortemente segnata da osservazione politica, ironia, disincanto e visione morale.
+      </p>
+
+      <p>
+        L’album viene oggi riletto come una testimonianza importante della musica italiana degli anni Ottanta,
+        capace di dialogare con la stagione battiatiana ma anche di affermare una voce autonoma.
+      </p>
+    </section>
+
+    <section>
+      <h2>Poesia, teatro, canzone</h2>
+
+      <p>
+        Il percorso di Mino Di Martino include anche esperienze legate alla parola poetica e al teatro musicale,
+        come <em>Le campane del gloria. Poesie in forma di canzone</em>, spettacolo basato su testi
+        di Pier Paolo Pasolini, alcuni dei quali interpretati da Alice.
+      </p>
+
+      <p>
+        Questa dimensione conferma la centralità del rapporto tra musica, testo, scena e ricerca espressiva
+        nel lavoro dell’autore.
+      </p>
+    </section>
+
+  <section class="video-section">
+
+  <h2>Video e ascolti</h2>
+
+  <div class="video-grid">
+
+    <div class="video-item">
+      <h3>I Giganti — “Tema”</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/gdn3FZ-D-jo" title="I Giganti — Tema" allowfullscreen></iframe>
+      </div>
     </div>
 
+    <div class="video-item">
+      <h3>I Giganti — “Proposta”, Festival di Sanremo 1967</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/sRRvz6ZStA0" title="I Giganti — Proposta" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>I Giganti — “Da bambino”, Festival di Sanremo 1968</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/1ccVzdFApYU" title="I Giganti — Da bambino" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>I Giganti — “Io e il presidente”, Cantagiro 1967</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/70wR70MKBfU" title="I Giganti — Io e il presidente" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>I Giganti — “Voglio essere una scimmia”, Cantagiro 1970</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/ayFcYt1Fp_o" title="I Giganti — Voglio essere una scimmia" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>I Giganti — “Il viso di lei”, Sanremo 1971</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/x-hqzRXtaWnM" title="I Giganti — Il viso di lei" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>Premio Borsellino 2011 — Concerto dal vivo</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/GsWLOD2-jqY" title="Premio Borsellino 2011 — Concerto dal vivo" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>Telaio Magnetico — 1975</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/yqjbs8ByEmM" title="Telaio Magnetico — 1975" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>L’Orecchiocchio — speciale di Battiato con Mino Di Martino</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/6EJ7KgKffEs" title="L’Orecchiocchio — Battiato con Mino Di Martino" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>Alla periferia dell’impero — 1983</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/3g5-qZkzULg" title="Alla periferia dell’impero — 1983" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3>Alice — “Febbraio”, da Pasolini</h3>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/iObauWF-gHw8" title="Alice — Febbraio" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Dossier</h2>
+
+  <p>
+    <a href="pdf/mino-di-martino-dossier.pdf" target="_blank" rel="noopener">
+      Apri il dossier in PDF
+    </a>
+  </p>
+
+  <p>
+    <a href="pdf/mino-di-martino-dossier.pdf" download>
+      Scarica il dossier in PDF
+    </a>
+  </p>
+</section>
+
+    
   </main>
 
   <footer>
-    © Cronache Marziane — Cultural Association
+    © Cronache Marziane — Associazione culturale
   </footer>
 
 </body>
